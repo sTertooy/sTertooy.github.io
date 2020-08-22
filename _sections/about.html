@@ -4,7 +4,13 @@ I wrote a PhD thesis titled <a href="https://limo.libis.be/primo-explore/fulldis
 <br /><br />
 <h3>Education &amp; employment</h3>
 <table class="edutable">
-
-EMPLOYMENT HERE
-
+  {% for section in site.data.sections.sections %}
+    <tr>
+      <td class="edutdleft">{{ job.start }} - {% if job.end %}{{ job.end }}{% endif %}</td>
+      <td class="edutdright">
+        {{ job.desc }}<br />
+        (at {{ job.loc }})
+      </td>
+	  </tr>
+  {% endfor %}
 </table>
