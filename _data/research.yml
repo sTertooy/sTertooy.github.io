@@ -31,8 +31,8 @@ publications:
     coauthors:
       - "K. Dekimpe"
     journal: "Topology and its Applications"
-    year: "2020",
-    arXiv: "2002.08285",
+    year: "2020"
+    arXiv: "2002.08285"
     pdf: "Tertooy_Algorithms_For_Twisted_Conjugacy_Classes_Of_Polycyclic-By-Finite_Groups"
   - title: "Reidemeister spectra for almost-crystallographic groups"
     type: "thesis"
