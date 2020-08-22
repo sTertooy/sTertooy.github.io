@@ -63,7 +63,7 @@
         {% endif %}
         {% if publication.pdf %}
           {% capture link %}
-            <a href="./papers/{{ publication.pdf }}.pdf" target="_blank" style="font-weight: bold;">PDF</a>
+            <a href="./pdf/{{ publication.pdf }}.pdf" target="_blank" style="font-weight: bold;">PDF</a>
           {% endcapture %}
           {% assign link=link | split: " | " %}
           {% assign links=links | concat: link %}
