@@ -41,11 +41,32 @@
       {% if publication.DOI or publication.arXiv or publication.github or publication.pdf %}
         {% assign links="" | split: "" %}
         {% if publication.arXiv %}
-          {% capture arXiv %}
+          {% capture link %}
             <a href="https://arxiv.org/abs/{{ publication.arXiv }}" target="_blank" title="{{ publication.arXiv }}">arXiv</a>
           {% endcapture %}
-          {% assign arXiv=arXiv | split: " | " %}
-          {% assign links=links | concat: arXiv %}
+          {% assign link=link | split: " | " %}
+          {% assign links=links | concat: link %}
+        {% endif %}
+        {% if publication.DOI %}
+          {% capture link %}
+            <a href="https://doi.org/{{ publication.DOI }}" target="_blank" title="{{ publication.DOI }}">DOI</a>
+          {% endcapture %}
+          {% assign link=link | split: " | " %}
+          {% assign links=links | concat: link %}
+        {% endif %}
+        {% if publication.github %}
+          {% capture link %}
+            <a href="{{ publication.github }}" target="_blank" title="{{ publication.github }}">GitHub</a>
+          {% endcapture %}
+          {% assign link=link | split: " | " %}
+          {% assign links=links | concat: link %}
+        {% endif %}
+        {% if publication.pdf %}
+          {% capture link %}
+            <a href="./papers/{{ publication.pdf }}.pdf" target="_blank" style="font-weight: bold;">PDF</a>
+          {% endcapture %}
+          {% assign link=link | split: " | " %}
+          {% assign links=links | concat: link %}
         {% endif %}
         <b>[</b>
           {{ links | join: " <b>|</b> " }}
