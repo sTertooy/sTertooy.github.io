@@ -6,6 +6,9 @@ interests:
   - "Computational group theory"
 
 publications:
+  - title: "Twisted conjugacy in nilpotent-by-finite groups"
+    type: "preparation"
+    year: "2020"
   - title: "Fixed points of diffeomorphisms on nilmanifolds with a free nilpotent fundamental group"
     type: "published"
     coauthors:
