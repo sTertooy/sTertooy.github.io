@@ -1,4 +1,9 @@
 sections:
-  - shorttitle: About Me
-    fulltitle: About Me
+  - title: About Me
     url: about
+  - title: Research
+    url: research
+  - title: Teaching
+    url: teaching
+  - title: Contact
+    url: contact
