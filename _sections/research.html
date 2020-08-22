@@ -68,9 +68,11 @@
           {% assign link=link | split: " | " %}
           {% assign links=links | concat: link %}
         {% endif %}
-        <b>[</b>
-          {{ links | join: " <b>|</b> " }}
-        <b>]</b>
+        <span style="display:inline-block">
+          <b>[</b>
+            {{ links | join: " <b>|</b> " }}
+          <b>]</b>
+        </span>
       {% endif %}
     </li>
   {% endfor %}
