@@ -4,6 +4,6 @@ title: Sam Tertooy
 ---
 {% for section in site.data.sections.sections %}
   <h2 id="section-{{section.url}}">{{section.title}}</h2>
-	{% include_relative _sections/{{section.url}}.html %}
-	<div class="spacer"></div>
+  {% include_relative _sections/{{section.url}}.html %}
+  <div class="spacer"></div>
 {% endfor %}
