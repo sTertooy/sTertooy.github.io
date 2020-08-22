@@ -1,0 +1,14 @@
+<b>Address:</b>
+<ul class="address">
+  {% for line in site.data.personal.address %}
+    <li>{{ line }}</li>
+  {% endfor %}
+</ul>
+<br />
+<b>Email:</b><br />
+
+<a href="mailto:{{ site.data.personal.email }}" target="_blank">{{ site.data.personal.email }}</a><br /><br />
+
+<b>Office:</b><br />
+
+{{ site.data.personal.office }}
