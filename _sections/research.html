@@ -40,7 +40,9 @@
       {% endif %}
       {% if publication.DOI or publication.arXiv or publication.github or publication.DOI %}
         {% assign links="" | split: "" %}
-
+        <b>[</b>
+          {{ links | join: " , " }}
+        <b>]</b>
       {% endif %}
     </li>
   {% endfor %}
