@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		
-      		<meta charset="utf-8">
-		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-		<title>{{ page.title }}</title>
-    		<link rel="stylesheet" type="text/css" href="{{ "/css/main.css" }}">
-		
-	</head>
-	<body>
-		
-		<div class="container-wrap">
-			{% include sidebar.html %}
-			<div id="content">
-				{{ content }}
-				<div class="spacer"></div>
-				<div class="spacer"></div>
-				<div class="spacer"></div>
-				<div class="spacer"></div>
-			</div>
-		</div>
-	
-	</body>
+  <head>	
+    <meta charset="utf-8">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ "/css/main.css" }}">
+  </head>
+  <body>
+    <div class="container-wrap">
+      {% include sidebar.html %}
+      <div id="content">
+        {{ content }}
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+      </div>
+    </div>
+  </body>
 </html>
