@@ -1,4 +1,5 @@
 about:
-  name: about
+  shorttitle: About Me
+  fulltitle: About Me
   url: about.html
   
