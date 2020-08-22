@@ -21,7 +21,7 @@ publications:
     pdf: "Tertooy_Fixed_Points_Of_Diffeomorphisms_On_Nilmanifolds_With_A_Free_Nilpotent_Fundamental_Group_AM"
   - title: "TwistedConjugacy, Computation with twisted conjugacy classes"
     type: "package"
-    journal: "GAP Package"
+    desc: "GAP Package"
     version: "1.0.1"
     year: "2020"
     github: "https://sTertooy.github.io/TwistedConjugacy"
