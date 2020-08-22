@@ -11,8 +11,11 @@
     <li>
       <i>{{publication.title}}</i>
       {% if publication.coauthors %}
-        {{ publication.coauthors | join: ", " }}
+        (with {{ publication.coauthors | join: ", " }})
+      {% elsif publication.supervisor %}
+        (supervisor: {{ publication.supervisor }})
       {% endif %}
+      .
       {% if publication.type=="package" %}
         {{ publication.desc }}, 
         version <b>{{ publication.version }}</b>
@@ -36,7 +39,7 @@
           {{ publication.journal }} (advance online publication, {{ publication.year }}).
         {% else %}
           {{ publication.journal }}
-          <b>{{ publication.volume }}.{% if publication.issue %}{{ publication.issue }}{% endif %}</b>
+          <b>{{ publication.volume }}{% if publication.issue %}.{{ publication.issue }}{% endif %}</b>
           ({{ publication.year }}),
           pp. {{ publication.pages }}.
         {% endif %}
