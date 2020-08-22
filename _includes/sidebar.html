@@ -1,6 +1,6 @@
 <aside id="sidebar">
 	<div class="photo" style="background-image: url(PHOTO URL HERE);"></div>
-	<h1 id="name">MY NAME HERE</h1>
+	<h1 id="name">{{ site.data.personal.name }}</h1>
 	<nav id="menu" class="navbar">
 		<div class="sidebar-main">
 			<ul>
@@ -8,15 +8,15 @@
 			</ul>
 			<br /><br />
 			<div>
-				<a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/RESEARCHGATE PROFILE HERE?cp=shp" target="_blank"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" /></a>
+				<a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/{{ site.data.personal.researchGate }}?cp=shp" target="_blank"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" /></a>
 			</div>
 			<br />
 			<div itemscope itemtype="https://schema.org/Person">
-				<a href="https://orcid.org/" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">ORCID ID HERE</a>
+				<a href="https://orcid.org/{{ site.data.personal.orcid }}" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">{{ site.data.personal.orcid }}</a>
 			</div>
 			<br />
 			<div>
-				<span id="updated">Last updated on: CURRENT DATE HERE</span>
+				<span id="updated">Last updated on: {{ site.time }}</span>
 			</div>
 		</div>
 	</nav>
