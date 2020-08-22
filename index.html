@@ -2,4 +2,8 @@
 layout: default
 title: Sam Tertooy
 ---
-<h1>Hello world!</h1>
+{% for section in site.data.sections %}
+  <h2 id="section-{{section.url}}">{{section.fulltitle}}</h2>
+	{% include_relative _sections/{{section.url}}.html %}
+	<div class=\"spacer\"></div>
+{% endfor %}
