@@ -9,11 +9,7 @@
 <ul>
   {% for publication in site.data.research.publications %}
     <li>
-      <i>{{ publication.title }}</i>{% if publication.coauthors %}
-        (with {{ publication.coauthors | join: ", " }})
-      {% elsif publication.supervisor %}
-        (supervisor: {{ publication.supervisor }})
-      {% endif %}.
+      <i>{{ publication.title }}</i>{% if publication.coauthors %} (with {{ publication.coauthors | join: ", " }}){% elsif publication.supervisor %} (supervisor: {{ publication.supervisor }}){% endif %}.
       {% if publication.type=="package" %}
         {{ publication.desc }}, 
         version <b>{{ publication.version }}</b>
