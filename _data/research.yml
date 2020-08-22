@@ -35,9 +35,10 @@ publications:
     arXiv: "2002.08285",
     pdf: "Tertooy_Algorithms_For_Twisted_Conjugacy_Classes_Of_Polycyclic-By-Finite_Groups"
   - title: "Reidemeister spectra for almost-crystallographic groups"
-    type: "phdthesis"
+    type: "thesis"
     supervisor: "K. Dekimpe"
-    journal: "KU Leuven"
+    kind: "PhD thesis"
+    university: "KU Leuven"
     year: "2019"
     pages: "xi+266"
     pdf: "Tertooy_Reidemeister_Spectra_For_Almost-Crystallographic_Groups"
