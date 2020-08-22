@@ -4,7 +4,9 @@
 	<nav id="menu" class="navbar">
 		<div class="sidebar-main">
 			<ul>
-			  SECTIONS HERE
+				{% for section in site.data.sections.sections %}
+					<li><a href="./#section-{{section.url}}">{{section.shorttitle}}</a></li>
+				{% endfor %}
 			</ul>
 			<br /><br />
 			<div>
