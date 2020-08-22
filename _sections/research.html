@@ -14,7 +14,7 @@
         (with {{ publication.coauthors | join: ", " }})
       {% elsif publication.supervisor %}
         (supervisor: {{ publication.supervisor }})
-      {% endif %}
+      {% endif %}.
       .
       {% if publication.type=="package" %}
         {{ publication.desc }}, 
