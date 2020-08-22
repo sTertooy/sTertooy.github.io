@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}	
+		
+html,body {
+	overflow: auto;
+}
+
+body {
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: rgba(0, 0, 0, 0.7);
+}
+		
+.container-wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 0px;
+	padding: 0px;
+}
+		
+#sidebar {
+	margin-top: 0px;
+	padding-top: 0;
+	padding-bottom: 40px;
+	float: left;
+	max-width: 250px;
+	width: 25%;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1001;
+	background: #f3f2f6;
+	text-align: center;
+}
+		
+.photo {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+a {
+	color: #337bb7;
+	text-decoration: none;
+}
+
+#name {
+	display: block;
+	text-align: center;
+	color: #000;
+	font-size: 150%;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+		
+#sidebar ul {
+	text-align: center;
+}
+		
+#sidebar ul li {
+	padding: 0 0px 0 0 ;
+	margin: 0 0 10px 0;
+	list-style: none;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+		
+.sidebar-main {
+	position: relative;
+	min-height: 5000px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	display: block;
+}
+		
+.sidebar-main ul li a {
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+	position: relative;
+	padding: 10px 0;
+	font-family: Arial, sans-serif;
+}
+		
+.sidebar-main ul li a:hover {
+	color:  #2d99f0;
+	text-decoration: none;
+	position: relative;
+	padding: 10px 0;
+	font-family: Arial, sans-serif;
+}
+
+h2 {
+	padding-top: 15px;
+	font-size: 18px;
+	margin-bottom: 2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.8;
+	position: relative;
+	color: #000;
+	font-family: serif;
+}
+		
+.spacer {
+	margin-bottom:75px;
+}
+
+#updated {
+	font-size: 10px;
+}
+
+#content {
+	padding-left:285px;
+	padding-top:15px;
+	padding-right:10px;
+	text-align:justify;
+}
+
+.address {
+	list-style-type: none;
+}
+
+.edutable {
+	width: 100%;
+	border: 0px;
+}
+
+.edutdleft {
+	width: 25%;
+}
+
+.edutdright {
+	width: 75%;
+}
