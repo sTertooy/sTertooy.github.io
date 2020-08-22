@@ -44,6 +44,7 @@
           {% capture arXiv %}
             <a href="https://arxiv.org/abs/{{ publication.arXiv }}" target="_blank" title="{{ publication.arXiv }}">arXiv</a>
           {% endcapture %}
+          {% assign links=links | concat: arXiv %}
         {% endif %}
         <b>[</b>
           {{ links | join: " , " }}
