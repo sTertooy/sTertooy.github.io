@@ -1,15 +1,48 @@
 <h3>Research interests</h3>
 <ul>
-
-  RESEARCH INTERESTS HERE
-
+  {% for interest in site.data.research.interests %}
+    <li>{{interest}}</li>
+  {% endfor %}
 </ul>
 <br /><br />
 <h3>Publications</h3>
 <ul>
-
-  PUBLICATIONS HERE
-
+  {% for publication in site.data.research.publications %}
+    <li>
+      <i>{{publication.title}}</i>
+      {% if publication.coauthors %}
+        {{ publication.coauthors | join: ", " }}
+      {% endif %}
+      {% if publication.type=="package" %}
+        {{ publication.desc }}, 
+        version <b>{{ publication.version }}</b>
+        ({{ publication.year }}).
+      {% elsif publication.type=="thesis" %}
+        {{ publication.kind }}, 
+        {{ publication.university}} 
+        ({{ publication.year }}),
+        pp. {{ publication.pages }}.
+      {% else %}
+        {% if publication.type=="preperation" %}
+          In preparation 
+          ({{ publication.year }}).
+        {% elsif publication.type=="preprint" %}
+          Preprint
+          ({{ publication.year }}).
+        {% elsif publication.type=="accepted" %}
+          To appear in {{ publication.journal }}  
+          ({{ publication.year }}).
+        {% elsif publication.type=="online" %}
+          {{ publication.journal }} (advance online publication, {{ publication.year }}).
+        {% else %}
+          {{ publication.journal }}
+          <b>{{ publication.volume }}.{% if publication.issue %}{{ publication.issue }}{% endif %}</b>
+          ({{ publication.year }}),
+          pp. {{ publication.pages }}.
+        {% endif %}
+      {% endif %}
+    </li>
+  {% endfor %}
 </ul>
 <br /><br />
 
