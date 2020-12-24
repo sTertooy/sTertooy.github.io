@@ -30,11 +30,12 @@ publications:
     github: "https://sTertooy.github.io/TwistedConjugacy"
     pdf: "Tertooy_TwistedConjugacy_Manual"
   - title: "Algorithms for twisted conjugacy classes of polycyclic-by-finite groups"
-    type: "accepted"
+    type: "online"
     coauthors:
       - "K. Dekimpe"
     journal: "Topology and its Applications"
     year: "2020"
+    DOI: "10.1016/j.topol.2020.107565"
     arXiv: "2002.08285"
     pdf: "Tertooy_Algorithms_For_Twisted_Conjugacy_Classes_Of_Polycyclic-By-Finite_Groups"
   - title: "Reidemeister spectra for almost-crystallographic groups"
